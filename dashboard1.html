@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./assests/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assests/css/fontawesome/all.css">
+    <link rel="stylesheet" href="./assests/css/dashboard1.css">
+    <title>All In One</title>
+</head>
+
+<body>
+    <section class="main-container">
+        <header id="sidebar">
+            <nav id="sidenav">
+                <div title="Gmail">
+                    <img src="./assests/images/gmail.png" alt="" class="app-logo" id="gmail-button" draggable="true"
+                        ondragstart="drag(event)">
+                </div>
+                <div title="Google Chat">
+                    <img src="./assests/images/chat.png" alt="" class="app-logo" id="chat-button" draggable="true"
+                        ondragstart="drag(event)">
+                </div>
+                <div title="Gitlab">
+                    <img src="./assests/images/gitlab.png" class="app-logo" id="gitlab-button" draggable="true"
+                        ondragstart="drag(event)">
+                </div>
+                <div title="Slack">
+                    <img src="./assests/images/slack.png" class="app-logo" id="slack-button" draggable="true"
+                        ondragstart="drag(event)">
+                </div>
+                <div title="Repl">
+                    <img src="./assests/images/repl.png" class="app-logo" id="repl-button" draggable="true"
+                        ondragstart="drag(event)">
+                </div>
+                <div id="logout" title="Logout">
+                    <i class="fas fa-sign-out-alt fa-3x" style="color:#EF462A"></i>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <section class="row" id="wrapper">
+                <article id="webview-1" class="col-sm-8" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    ondragenter="dragEnter1(event)" ondragleave="dragExit1(event)">
+                    <div id="loading">
+                        <br>
+                        <br> <br> <br> <br>
+                        <img src="./assests/images/Group123x.png" alt="loader" class="mx-auto d-block">
+                    </div>
+                    <h6 class="text-center text-secondary"><i>Drag and Drop an app to open</i></h6>
+                    <h5 class="text-center"><strong>#Main_Screen</strong></h5>
+                    <p class="text-center text-secondary">
+                        <small>Gmail, Gitlab, Repl.it</small>
+                    </p>
+                </article>
+                <div class="drag-handler"></div>
+                <article id="webview-2" class="col-sm-4" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    ondragenter="dragEnter2(event)" ondragleave="dragExit2(event)">
+                    <div id="loading">
+                        <br>
+                        <br> <br> <br> <br>
+                        <img src="./assests/images/Group123x.png" alt="loader" class="mx-auto d-block">
+                    </div>
+                    <h6 class="text-center text-secondary"><i>Drag and Drop an app to open</i></h6>
+                    <h5 class="text-center"><strong>#Second_Screen</strong></h5>
+                    <p class="text-center text-secondary">
+                        <small>Google Chat, Slack, StackoverFlow</small>
+                    </p>
+                </article>
+            </section>
+        </main>
+        <script src="./assests/js/dashboard1.js"></script>
+        <!-- <script src="./assests/js/dashboard.js"></script> -->
+</body>
+
+</html>

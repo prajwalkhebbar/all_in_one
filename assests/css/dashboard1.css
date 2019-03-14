@@ -1,0 +1,39 @@
+.app-logo {
+    width: 3.5em;
+}
+
+#sidenav {
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid rgb(194, 189, 189);
+    height: 100%;
+    margin: auto;
+    background-color: #18131D
+}
+
+#sidenav>div {
+    padding: 1em;
+    cursor: pointer;
+}
+
+#sidenav>div:hover {
+    background-color: rgb(216, 205, 205)
+}
+
+.main-container {
+    display: flex;
+}
+
+.main-container main {
+    flex: 1;
+}
+
+#wrapper {
+    height: 100vh;
+    width: 92vw
+}
+
+#webview-1 {
+    border-right: 0.1em solid #19131D
+}
