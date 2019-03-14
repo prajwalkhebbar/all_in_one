@@ -15,6 +15,14 @@
     "electron-packager": "^13.1.1"
   },
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "publish": "build --mac --win --linux -p always"
+  },
+  "build": {
+    "publish": [{
+        "provider": "github",
+        "owner": "prajwalkhebbar",
+        "repo": "all_in_one"
+    }]
   }
 }
